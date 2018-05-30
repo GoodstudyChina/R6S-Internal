@@ -21,7 +21,6 @@ void Visuals::VisualsMain()
 void Visuals::DrawESP()
 {
 	RECT desktop;
-	const HWND hDesktop = FindWindowA(NULL, "Rainbow Six");
 	GetWindowRect(hDesktop, &desktop);
 	int horizontal = desktop.right;
 	int vertical = desktop.bottom;
@@ -138,7 +137,6 @@ void Visuals::DrawESP()
 void Visuals::DrawVisuals()
 {
 	RECT desktop;
-	const HWND hDesktop = FindWindowA(NULL, "Rainbow Six");
 	GetWindowRect(hDesktop, &desktop);
 	int horizontal = desktop.right;
 	int vertical = desktop.bottom;
