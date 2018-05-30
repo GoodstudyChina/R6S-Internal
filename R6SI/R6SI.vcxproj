@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{A10735E8-909A-42E7-805B-B1B3BD3BE762}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Project Omni</RootNamespace>
+    <RootNamespace>R6SI</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
     <ProjectName>R6SI</ProjectName>
   </PropertyGroup>
