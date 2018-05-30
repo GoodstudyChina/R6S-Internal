@@ -1,0 +1,8 @@
+
+	Todo list:
+
+	Implement Test Mode Spoofing
+
+	Implement Disk Serial Spoofing
+
+	Implement lsass Exploit

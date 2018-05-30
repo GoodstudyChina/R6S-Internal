@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files\Main\Tools\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Source Files\Main\Tools\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>Source Files\Main\Tools\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="GameRenderer.cpp">
+      <Filter>Source Files\Main\Tools\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector3.cpp">
+      <Filter>Source Files\Main\Tools\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Helpers.cpp">
+      <Filter>Source Files\Main\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Source Files\Main\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings.cpp">
+      <Filter>Source Files\Main\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Source Files\Main\Tools\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="D3D11Hook.cpp">
+      <Filter>Source Files\Main\Tools\Hook</Filter>
+    </ClCompile>
+    <ClCompile Include="Visuals.cpp">
+      <Filter>Source Files\Main\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="Accuracy.cpp">
+      <Filter>Source Files\Main\Features</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Array.h">
+      <Filter>Header Files\Main\Tools\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files\Main\Tools\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Header Files\Main\Tools\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>Header Files\Main\Tools\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="GameRenderer.h">
+      <Filter>Header Files\Main\Tools\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.h">
+      <Filter>Header Files\Main\Tools\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Offsets.h">
+      <Filter>Header Files\Main\Tools\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>Header Files\Main\Tools\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files\Main\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files\Main\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Helpers.h">
+      <Filter>Header Files\Main\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Header Files\Main\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings.h">
+      <Filter>Header Files\Main\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="XorStr.h">
+      <Filter>Header Files\Main\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Header Files\Main\Tools\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Header Files\Main\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Visuals.h">
+      <Filter>Header Files\Main\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="Accuracy.h">
+      <Filter>Header Files\Main\Features</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7224f220-eb97-4b48-baf3-269f9b9e0650}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7db90da1-4009-45ff-aba9-ea3419ad6440}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main">
+      <UniqueIdentifier>{97553e26-8e1a-4abb-8e89-200063d238c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Main">
+      <UniqueIdentifier>{3057ba65-982b-4b01-aedf-ea1197966ed3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main\Utilities">
+      <UniqueIdentifier>{3d00c1e8-a0bb-49e7-b144-4f7c0cb575d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Main\Utilities">
+      <UniqueIdentifier>{5a8df0eb-7881-41c9-8e80-c99e5ca2ef92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Main\Tools">
+      <UniqueIdentifier>{7ae480b7-a458-42b8-ad73-f1d900c1ba42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Main\Tools\SDK">
+      <UniqueIdentifier>{aa88665c-566d-4170-9c92-903524b70c99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Main\Tools\Renderer">
+      <UniqueIdentifier>{de6e4d9f-0a27-42bd-a631-e09bc17df459}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main\Tools">
+      <UniqueIdentifier>{2376b40f-2970-4a93-b082-1272bf8a6b78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main\Tools\SDK">
+      <UniqueIdentifier>{b9db1e4b-d38a-4e0c-bce7-827bbf807757}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main\Tools\Hook">
+      <UniqueIdentifier>{be5c66fe-64b6-475b-b21b-5a0678b80bcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main\Tools\Renderer">
+      <UniqueIdentifier>{b806bc43-e8c3-46b9-bd54-230b9695fe99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Main\Features">
+      <UniqueIdentifier>{695a4962-b766-4257-b1c3-2b927a161b60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main\Features">
+      <UniqueIdentifier>{b645105d-01f3-4a84-bcb1-df8abf4369df}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="todo.txt" />
+  </ItemGroup>
+</Project>
