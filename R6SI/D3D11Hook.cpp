@@ -17,6 +17,7 @@
 
 #pragma comment(lib, "d3d11.lib")
 #pragma comment(lib, "BeaEngine64.lib")
+#pragma comment(lib, "FW1FontWrapper.lib")
 
 #include "Renderer.h"
 
@@ -97,8 +98,6 @@ HRESULT __stdcall hookD3D11Present(IDXGISwapChain* pSwapChain, UINT SyncInterval
 	}
 
 	pFontWrapper->DrawString(pContext, L"D3D11 Hook", 10.0f, 16.0f, 16.0f, 0xffff1612, FW1_RESTORESTATE);
-
-	/*Renderer::GetInstance()->DrawTest();*/
 
 	return phookD3D11Present(pSwapChain, SyncInterval, Flags);
 }
@@ -333,6 +332,8 @@ DWORD __stdcall InitializeHook(LPVOID)
 	Helpers::LogSuccess("pDevice, pContext and pSwapChain Released");
 	Helpers::Log("");
 
+	Input::GetInstance()->StartThread();
+
 	return NULL;
 }
 
@@ -341,6 +342,7 @@ BOOL __stdcall DllMain(HINSTANCE hModule, DWORD dwReason, LPVOID lpReserved)
 {
 	if (dwReason == DLL_PROCESS_ATTACH)
 	{
+		DisableThreadLibraryCalls(hModule);
 		memset(detourBuffer, 0, sizeof(detourBuffer) * sizeof(void*));
 		CreateThread(NULL, 0, InitializeHook, NULL, 0, NULL);
 	}

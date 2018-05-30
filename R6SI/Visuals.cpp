@@ -21,6 +21,7 @@ void Visuals::VisualsMain()
 void Visuals::DrawESP()
 {
 	RECT desktop;
+	const HWND hDesktop = FindWindowA(NULL, "Rainbow Six");
 	GetWindowRect(hDesktop, &desktop);
 	int horizontal = desktop.right;
 	int vertical = desktop.bottom;
@@ -71,7 +72,7 @@ void Visuals::DrawESP()
 							if (Settings::GetInstance()->bESPHead)
 							{
 								// Position of circle.
-								XMFLOAT2 circ{ HeadPosition.x,                                  // x1
+								XMFLOAT2 circ{ HeadPosition.x,                                   // x1
 											   HeadPosition.y };                                 // y1
 
 																					  // Rendering of circle, with color.
@@ -104,12 +105,12 @@ void Visuals::DrawESP()
 							if (Settings::GetInstance()->bESPSnapline)
 							{
 								// Position of x1 & y1. AKA From.
-								XMFLOAT2 lineFrom(horizontal / 2,                                  // x1
-									vertical);                                      // y1
+								XMFLOAT2 lineFrom( horizontal / 2,                                  // x1
+									               vertical);                                       // y1
 
-																					// Position of x2 & y2. AKA To.
+								// Position of x2 & y2. AKA To.
 								XMFLOAT2 lineTo{ HeadPosition.x,                                    // x2
-									HeadPosition.y };                                  // y2
+									             HeadPosition.y };                                  // y2
 
 								// Rendering of line, from bottom mid screen to players heads, with color.
 								Renderer::GetInstance()->drawLine(lineFrom, lineTo, Color{ 0.764705896f, 0.176470593f, 0.019607844f, 1.f });
@@ -137,6 +138,7 @@ void Visuals::DrawESP()
 void Visuals::DrawVisuals()
 {
 	RECT desktop;
+	const HWND hDesktop = FindWindowA(NULL, "Rainbow Six");
 	GetWindowRect(hDesktop, &desktop);
 	int horizontal = desktop.right;
 	int vertical = desktop.bottom;
@@ -148,45 +150,45 @@ void Visuals::DrawVisuals()
 		if (pGameManager->IsInGame())
 		{
 			// Position of x1 & y1. AKA From.
-			XMFLOAT2 line1From(horizontal / 2 - 15,                                  // x1
-							   vertical / 2);                                        // y1
+			XMFLOAT2 line1From( horizontal / 2 - 15,                                  // x1
+							    vertical / 2);                                        // y1
 
 			// Position of x2 & y2. AKA To.
-			XMFLOAT2 line1To(horizontal / 2 - 5,                                     // x2
-				             vertical / 2);                                          // y2
+			XMFLOAT2 line1To( horizontal / 2 - 5,                                     // x2
+				              vertical / 2);                                          // y2
 
 			// Rendering of line1, with color.
 			Renderer::GetInstance()->drawLine(line1From, line1To, Color{ 0.254901975f, 0.254901975f, 0.254901975f, 1.f });
 
 			// Position of x1 & y1. AKA From.
-			XMFLOAT2 line2From(horizontal / 2 + 16,                                  // x1
-				               vertical / 2);                                        // y1
+			XMFLOAT2 line2From( horizontal / 2 + 16,                                  // x1
+				                vertical / 2);                                        // y1
 
 			// Position of x2 & y2. AKA To.
-			XMFLOAT2 line2To(horizontal / 2 + 6,                                     // x2
-				             vertical / 2);                                          // y2
+			XMFLOAT2 line2To( horizontal / 2 + 6,                                     // x2
+				              vertical / 2);                                          // y2
 
 			// Rendering of line2, with color.
 			Renderer::GetInstance()->drawLine(line2From, line2To, Color{ 0.254901975f, 0.254901975f, 0.254901975f, 1.f });
 
 			// Position of x1 & y1. AKA From.
-			XMFLOAT2 line3From(horizontal / 2,                                       // x1
-				               vertical / 2 - 15);								     // y1
+			XMFLOAT2 line3From( horizontal / 2,                                       // x1
+				                vertical / 2 - 15);								      // y1
 
 			// Position of x2 & y2. AKA To.
-			XMFLOAT2 line3To(horizontal / 2,                                         // x2
-				             vertical / 2 - 5);                                     // y2
+			XMFLOAT2 line3To( horizontal / 2,                                         // x2
+				              vertical / 2 - 5);                                      // y2
 
 			// Rendering of line3, with color.
 			Renderer::GetInstance()->drawLine(line3From, line3To, Color{ 0.254901975f, 0.254901975f, 0.254901975f, 1.f });
 
 			// Position of x1 & y1. AKA From.
-			XMFLOAT2 line4From(horizontal / 2,                                       // x1
-				               vertical / 2 + 16);							         // y1
+			XMFLOAT2 line4From( horizontal / 2,                                       // x1
+				                vertical / 2 + 16);							          // y1
 
 			// Position of x2 & y2. AKA To.
-			XMFLOAT2 line4To(horizontal / 2,                                         // x2
-				             vertical / 2 + 6);                                      // y2
+			XMFLOAT2 line4To( horizontal / 2,                                         // x2
+				              vertical / 2 + 6);                                      // y2
 
 			// Rendering of line4, with color.
 			Renderer::GetInstance()->drawLine(line4From, line4To, Color{ 0.254901975f, 0.254901975f, 0.254901975f, 1.f });
